@@ -10,93 +10,52 @@
 
 <body>
     <h1>Forms Demo</h1>
-    <h2>Our First Form</h2>
 
     <form action="/tacos">
+
+        <button type="button">I'm type button, don't submit the form!</button><br><br>
+
+        <label for="username">Username: </label>
+        <input type="text" id="username" placeholder="enter your username"><br><br>
+
+        <label for="password">Password: </label>
+        <input type="password" id="password" placeholder="enter your password"><br><br>
+
+        <label for="color">Enter a color: </label>
+        <input type="color" id="color"><br><br>
+
+        <label for="number">Enter a number: </label>
+        <input type="number" id="number"><br><br>
+
         <p>
-            <label for="username">Enter a Username:</label>
-            <input id="username" type="text" placeholder="username" name="username">
+            <label for="volume">Volume: </label>
+            <input type="range" min="0" max="10" id="volume" name="volume">
         </p>
+
         <p>
-            <label for="password">Enter a Password:</label>
-            <input type="password" placeholder="password" id="password" name="password">
+            <label for="">Any Special Requests? </label><br>
+            <textarea name="requests" id="requests" cols="30" rows="10"
+                placeholder="Type your request here."></textarea>
         </p>
-        <p>
-            <label for="color">Enter a Color:</label>
-            <input type="color" id="color" name="color">
-        </p>
-        <p>
-            <!-- Alternative way to label an input (less common) -->
-            <label>
-                Enter a Number:
-                <input type="number" placeholder="enter a number" name="num">
-            </label>
-        </p>
-        <!-- this button doesn't submit the form b/c of the "type" attribute -->
-        <button type="button">Regular button (won't submit)</button>
-        <!-- This button submits the form! -->
-        <button>Submit!!!</button>
-        <!-- So does this one: -->
-        <input type="submit" value="Click Me!">
+
+        <button type="submit">Submit</button>
     </form>
 
-    <br>
-    <hr><br>
+    <h2>Validations Demo</h2>
 
-    <h2>Reddit Search</h2>
-    <form action="https://www.reddit.com/search">
-        <label for="query">Query: </label>
-        <input type="text" id="query" name="q">
-
-        <button type="submit">Search Reddit</button>
-    </form>
-
-    <br>
-    <hr><br>
-
-    <h2>Google Search</h2>
-    <form action="https://www.google.com/search">
-        <label for="query">Query: </label>
-        <input type="text" id="query" name="q">
-
-        <button type="submit">Search Google</button>
-    </form>
-
-    <br>
-    <hr><br>
-
-    <h2>Youtube Search</h2>
-    <form action="https://www.youtube.com/results">
-        <label for="query">Query: </label>
-        <input type="text" id="query" name="search_query">
-
-        <button type="submit">Search Youtube</button>
-    </form>
-
-    <br>
-    <hr><br>
-
-    <h2>More Inputs</h2>
-    <form action="/birds">
-        <label for="agree">I agree to everything</label>
-        <input type="checkbox" name="agree_tos" id="agree">
+    <form action="/dummy">
+        <label for="first">Enter First Name</label>
+        <input type="text" id="first" name="first" required>
 
         <p>
-            <label for="xs">XS</label>
-            <input type="radio" name="size" id="xs" value="xs">
-            <label for="m">M</label>
-            <input type="radio" name="size" id="m" value="m">
-            <label for="l">L</label>
-            <input type="radio" name="size" id="l" value="l">
+            <label for="username">Username: </label>
+            <input type="text" id="username" placeholder="enter your username" minlength="5" maxlength="20" required>
         </p>
 
-        <label for="meal">Please select an entree: </label>
-        <select name="meal" id="meal">
-            <option value="">--- Please select one option ---</option>
-            <option value="meat">Meat</option>
-            <option value="chicken">Chicken</option>
-            <option value="fish">Fish</option>
-        </select>
+        <p>
+            <label for="email">Email: </label>
+            <input type="email" id="email" required>
+        </p>
 
         <button>Submit</button>
     </form>
