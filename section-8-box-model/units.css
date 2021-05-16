@@ -1,0 +1,36 @@
+section {
+    background-color: lightgrey;
+    width: 800px;
+    height: 800px;
+}
+
+div {
+    background-color: palevioletred;
+    width: 80%;
+    height: 50%;
+}
+
+h1 {
+    font-size: 40px;
+    border: 1px solid black;
+    line-height: 200%;
+}
+
+article {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 0.7em;
+}
+
+button {
+    font-size: 1em;
+    padding: 0.2em 1em;
+    border-radius: 0.5em;
+    background-color: peachpuff;
+}

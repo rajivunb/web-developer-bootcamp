@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+}
+
+div {
+    width: 400px;
+    height: 400px;
+    background-color: antiquewhite;
+}
+
+h1 {
+    background-color: brown;
+    width: 100px;
+    padding-left: 30px;
+}
+
+#one {
+    background-color: cadetblue;
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+}
+
+#two {
+    background-color: coral;
+    border: 2px dashed purple;
+}
+
+#three {
+    background-color: darkgray;
+    border: 2px dashed black;
+    border-radius: 10%;
+}
+
+button {
+    padding: 10px;
+}
