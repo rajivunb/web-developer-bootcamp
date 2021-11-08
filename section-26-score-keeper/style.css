@@ -1,0 +1,13 @@
+#score {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.winner {
+    color: green;
+    font-weight: bold;
+}
+
+.loser {
+    color: red;
+}

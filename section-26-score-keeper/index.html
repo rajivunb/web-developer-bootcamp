@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Keeper</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <img src="https://babyherois.com.br/wp-content/uploads/2019/05/2019-05-24-curiosidades-sobre-ping-pong.jpg" />
+    <div id="score-panel">
+        <h1 id="score">
+            <span id="player1">0</span>
+            to
+            <span id="player2">0</span>
+        </h1>
+        <p>Use the buttons below to keep scores</p>
+    </div>
+
+    <div id="rounds">
+        Playing To
+        <select name="num-rounds" id="num-rounds">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3" selected>3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+        </select>
+    </div>
+
+    <div id="buttons">
+        <button id="btn-player-1">+1 Player One</button>
+        <button id="btn-player-2">+1 Player Two</button>
+        <button id="reset">Reset</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
